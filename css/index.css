@@ -1,0 +1,165 @@
+
+header {
+    background-color: #9C8AB8; 
+    color: #fff; /* Text color */
+    text-align: center; 
+     
+}
+
+.content {
+    max-width: 460px;
+    width: 90%;
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.80); /* for semi-transparent background */
+    border-radius: 10px; /* for rounded corners */
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* styles for the 'Explore' button */
+.explore-button {
+    display: inline-block;
+    background-color: #9C8AB8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s; /* for hover effect */
+}
+
+.nav-menu {   
+    display: inline-block;
+    background-color: #9C8AB8;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.nav-menu:hover {
+    background-color: #774B8E;
+	text-decoration: none;
+}
+
+/* styles for images within the content */
+.image {
+    max-width: 90%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.explore-button:hover {
+    background-color: #774B8E;
+}
+
+.box {
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 15px;
+    transition: transform 0.3s; /* for transition on hover */
+}
+
+/* hover effect for individual boxes */
+.box:hover {
+    transform: scale(1.1); /* scale the box slightly on hover */
+}
+
+/* heading styles within the boxes */
+.box h1 {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: color 0.3s; /* color transition on hover */
+}
+
+/* hover effect for box headings */
+.box a:hover h1 {
+    color: #774B8E; /* change heading color on hover */
+}
+
+/* styles for images within boxes */
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #9C8AB8;
+    color: #fff;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    width: 100%;
+}
+
+/* Styles for paragraph elements within the footer */
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    display: inline-block;
+	text-align:right;
+	list-style: none; /* remove default list styles */  
+    padding: 0; /* remove default padding */
+}
+
+/* styles for each navigation menu item */
+nav ul li {
+	display: inline-block;
+	text-align:right;
+    margin-left: 2px; /* adds margin to separate the links */
+    position: relative;
+}
+
+/* remove margin for the first child (HOME link) */
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+/* styles for navigation links */
+nav ul li a {
+    text-decoration: none; /* remove underline */
+    color: #fff; 
+    font-weight: bold; 
+    position: relative;
+    overflow: hidden; /* Hide the underline initially */
+}
+
+/* for underline hover effect */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0); /* initially, the underline is scaled to 0 */
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+/* scale the underline to its full width on hover */
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}

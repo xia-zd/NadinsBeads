@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .collection-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .bracelets {
+    background-color: #ffffff;
+  }
+
+  .necklaces {
+    background-color: #ffffff;
+  }
+
+  .box {
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .box img {
+    width: 200px; /* width adjustment */
+    height: 200px; /* height adjustment */
+    border-radius: 8px;
+    border: 2px solid #bdbdbd; /* border color */
+  }
+
+  .box p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
